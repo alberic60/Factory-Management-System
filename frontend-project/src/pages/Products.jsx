@@ -161,7 +161,7 @@ export default function Products() {
                   <tr key={product._id} className="hover:bg-slate-50">
                     <td className="px-4 py-4 text-slate-900">{product.productName}</td>
                     <td className="px-4 py-4 text-slate-700">{product.productAmount}</td>
-                    <td className="px-4 py-4 text-slate-700">{product.unitPrice}</td>
+                    <td className="px-4 py-4 text-slate-700">{product.unitPrice} <i>FRW</i></td>
                     <td className="px-4 py-4 text-slate-500 space-x-2">
                       <button onClick={() => startEdit(product)} className="rounded-xl bg-primary px-3 py-2 text-sm font-semibold text-white transition hover:bg-green-600">
                         Edit

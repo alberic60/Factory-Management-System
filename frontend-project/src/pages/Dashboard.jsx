@@ -85,7 +85,7 @@ export default function Dashboard() {
           >
             <h3 className="text-sm font-medium text-blue-600 uppercase">Total Products</h3>
             <p className="mt-3 text-3xl font-bold text-blue-900">{stats.productCount}</p>
-            <p className="mt-1 text-sm text-blue-700">Inventory value: ${stats.totalProducts}</p>
+            <p className="mt-1 text-sm text-blue-700">Inventory value: {stats.totalProducts} <i>FRW</i></p>
             <p className="text-xs text-blue-600 mt-2 hover:underline">View products →</p>
           </div>
 
@@ -114,7 +114,7 @@ export default function Dashboard() {
             className="rounded-3xl border border-slate-200 bg-gradient-to-br from-amber-50 to-amber-100 p-6 cursor-pointer transition hover:shadow-lg hover:from-amber-100 hover:to-amber-150"
           >
             <h3 className="text-sm font-medium text-amber-600 uppercase">Revenue</h3>
-            <p className="mt-3 text-3xl font-bold text-amber-900">${stats.totalRevenue}</p>
+            <p className="mt-3 text-3xl font-bold text-amber-900">{stats.totalRevenue} <i>FRW</i></p>
             <p className="mt-1 text-sm text-amber-700">Total payments received</p>
             <p className="text-xs text-amber-600 mt-2 hover:underline">View payments →</p>
           </div>
@@ -129,7 +129,7 @@ export default function Dashboard() {
                 <div key={product._id} className="rounded-lg bg-white p-4 border border-red-100">
                   <p className="font-medium text-slate-900">{product.productName}</p>
                   <p className="text-sm text-red-600 mt-1">Stock: {product.productAmount} units</p>
-                  <p className="text-xs text-slate-500 mt-1">Price: ${product.unitPrice}</p>
+                  <p className="text-xs text-slate-500 mt-1">Price: {product.unitPrice} <i>FRW</i></p>
                 </div>
               ))}
             </div>

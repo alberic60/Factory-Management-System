@@ -245,8 +245,8 @@ export default function Payments() {
                     <td className="px-4 py-4 text-slate-700">{payment.CustomerID?.customerName || payment.CustomerID || '—'}</td>
                     <td className="px-4 py-4 text-slate-700">{payment.OrderID?._id || payment.OrderID || '—'}</td>
                     <td className="px-4 py-4 text-slate-700">{payment.productName?.productName || payment.productName || '—'}</td>
-                    <td className="px-4 py-4 text-slate-700">{payment.productAmount ?? '—'}</td>
-                    <td className="px-4 py-4 text-slate-500">{payment.AmountPaid ?? '—'}</td>
+                    <td className="px-4 py-4 text-slate-700">{payment.productAmount ?? '—'} <i>FRW</i></td>
+                    <td className="px-4 py-4 text-slate-500">{payment.AmountPaid ?? '—'} <i>FRW</i></td>
                     <td className="px-4 py-4 text-slate-500">{payment.PaymentStatus || '—'}</td>
                     <td className="px-4 py-4 text-slate-500 space-x-2">
                       <button onClick={() => startEdit(payment)} className="rounded-xl bg-secondary px-3 py-2 text-sm font-semibold text-white transition hover:bg-blue-500">
